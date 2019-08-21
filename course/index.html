@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width= device-width, initial-scale=1.0" /><!--The viewport is the user's visible area of the web page.-->
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script src="js/jquery.ui.touch-punch.js"></script>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+
+</head>
+<body>
+<!-- Main Content Page-->
+<div id="startContainer">
+		<img id="mainStart" src="images/start.gif" draggable="false" />		
+	</div>
+<div id="mainContainer">	 
+	<div class="title-bar">
+		<div class="title-content">fp= dk uke ftl o.kZ ls “kw# gksrk gS] ml o.kZ rd js[kk [khapdj feyku fdth,A </div>
+	</div>
+	<div id="top-box" id="left">	
+		<!-- Options -->
+		<div id="content-box">			
+			<!-- Option 1 -->
+			<div id="option1" class="options-outer">
+					<img id="opt1" src="images/opt1.png" draggable="false"/>
+			</div>
+			<!-- Option 2 -->
+			<div id="option2" class="options-outer">
+				<img id="opt2" src="images/opt2.png" draggable="false"/>
+			</div>			
+			<!-- Option 3 -->
+			<div id="option3" class="options-outer">
+				<img id="opt3" src="images/opt3.png" draggable="false"/>
+			</div>
+			<!-- Option 4 -->
+			<div id="option4" class="options-outer">
+				<img id="opt4" src="images/opt4.png" draggable="false"/>
+			</div>
+			<!-- Option 5 -->
+			<div id="option5" class="options-outer">
+				<img id="opt5" src="images/opt5.png" draggable="false"/>
+			</div>
+			<!-- Option 6 -->
+			<div id="option6" class="options-outer">
+				<img id="opt6" src="images/opt6.png" draggable="false"/>
+			</div>
+		</div>				
+		
+		<!-- Drag Area -->
+		<div class="drag-area">
+			<div id="box1" class="boxes">
+				<div class="dragItem drag-box" id="drag-box1">
+					<div class="inner-drag-box"></div>
+				</div>
+				<div id="line1" class="line"></div>
+				<div id="answer-line1" class="answer-line"></div>
+			</div>
+			<div id="box2" class="boxes">
+				<div class="dragItem drag-box" id="drag-box2">
+					<div  class="inner-drag-box"></div>
+				</div>
+				<div id="line2" class="line"></div>
+				<div id="answer-line2" class="answer-line"></div>
+			</div>
+			<div id="box3" class="boxes">
+				<div class="dragItem drag-box" id="drag-box3">
+				<div class="inner-drag-box"></div>
+				</div>	
+				<div id="line3" class="line"></div>
+				<div id="answer-line3" class="answer-line"></div>
+			</div>
+			<div id="box4" class="boxes">
+				<div class="dragItem drag-box" id="drag-box4">
+				<div class="inner-drag-box"></div>
+				</div>
+				<div id="line4" class="line"></div>
+				<div id="answer-line4" class="answer-line"></div>
+			</div>
+			<div id="box5" class="boxes">
+				<div class="dragItem drag-box" id="drag-box5">
+				<div class="inner-drag-box"></div>
+				</div>
+				<div id="line5" class="line"></div>
+				<div id="answer-line5" class="answer-line"></div>
+			</div>
+			<div id="box6" class="boxes">
+				<div class="dragItem drag-box" id="drag-box6">
+				<div class="inner-drag-box"></div>
+				</div>
+				<div id="line6" class="line"></div>
+				<div id="answer-line6" class="answer-line"></div>
+			</div>			
+		</div>	
+
+		<!-- Drop Area -->
+		<div class="drop-area">
+			<div id="drop-box1" class="drop-box dropItem">
+				<div class="drop-boxes" id=""></div>
+			</div>
+			<div id="drop-box2" class="drop-box dropItem">
+				<div class="drop-boxes" id=""></div>
+			</div>
+			<div id="drop-box3" class="drop-box dropItem">
+				<div class="drop-boxes" id=""></div>
+			</div>
+			<div id="drop-box4" class="drop-box dropItem">
+				<div class="drop-boxes" id=""></div>
+			</div>
+			<div id="drop-box5" class="drop-box dropItem">
+				<div class="drop-boxes" id=""></div>
+			</div>
+			<div id="drop-box6" class="drop-box dropItem">
+				<div class="drop-boxes" id=""></div>
+			</div>
+		</div>	
+		
+		
+		<div id="content-box2">			
+			<!-- Option 1 -->
+			<div id="answer1" class="answers-outer">
+				<span id="ans1">Å</span>
+			</div>
+			<!-- Option 2 -->
+			<div id="answer2" class="answers-outer">
+				<span id="ans2">m</span>
+			</div>			
+			<!-- Option 3 -->
+			<div id="answer3" class="answers-outer">
+				<span id="ans3">va</span>
+			</div>
+			<!-- Option 4 -->
+			<div id="answer4" class="answers-outer">
+				<span id="ans4">v</span>
+			</div>
+			<!-- Option 5 -->
+			<div id="answer5" class="answers-outer">
+				<span id="ans5">vkS</span>
+			</div>
+			<!-- Option 6 -->
+			<div id="answer6" class="answers-outer">
+				<span id="ans6">vks</span>
+			</div>
+		</div>		
+		
+		<!-- Bottom buttons -->
+		<div id="bottomButtons">
+			<div id="show"><img id="show-img" src="images/show-1.png" draggable="false"/></div>
+			<div id="refresh"><img id="refresh-img" src="images/refresh-1.png" draggable="false"/></div>
+		</div>
+		<iframe id="iframe1" src="gifs/First/First.html"  width="30%" height="45%" style=" position: absolute; bottom: -1vmin; right: -6vmin; border: 0; z-index: -1;"></iframe>
+		<iframe id="iframe2" src="gifs/Correct/Correct.html"  width="30%" height="45%" style=" position: absolute; bottom: -2vmin; right: -5vmin; border: 0; z-index: -1;"></iframe>
+		<iframe id="iframe3" src="gifs/Incorrect/Incorrect.html"  width="30%" height="45%" style=" position: absolute; bottom: -2vmin; right: -6vmin; border: 0; z-index: -1;"></iframe>
+	</div>	
+	<div id="hideContainer"></div>
+
+
+	<div id="top-box2" id="left">	
+		<!-- Options -->
+		<div id="content-box_1">			
+			<!-- Option 1 -->
+			<div id="option7" class="options-outer">
+					<img id="opt7" src="images/opt7.png" draggable="false"/>
+			</div>
+			<!-- Option 2 -->
+			<div id="option8" class="options-outer">
+				<img id="opt8" src="images/opt8.png" draggable="false"/>
+			</div>			
+			<!-- Option 3 -->
+			<div id="option9" class="options-outer">
+				<img id="opt9" src="images/opt9.png" draggable="false"/>
+			</div>
+			<!-- Option 4 -->
+			<div id="option10" class="options-outer">
+				<img id="opt10" src="images/opt10.png" draggable="false"/>
+			</div>
+			<!-- Option 5 -->
+			<div id="option11" class="options-outer">
+				<img id="opt11" src="images/opt11.png" draggable="false"/>
+			</div>
+			<!-- Option 6 -->
+			<div id="option12" class="options-outer">
+				<img id="opt12" src="images/opt12.png" draggable="false"/>
+			</div>
+		</div>
+
+<!-- Drag Area -->
+		<div class="drag-area2">
+			<div id="box7" class="boxes">
+				<div class="dragItem1 drag-box" id="drag-box7">
+					<div class="inner-drag-box"></div>
+				</div>
+				<div id="line7" class="line"></div>
+				<div id="answer-line7" class="answer-line"></div>
+			</div>
+			<div id="box8" class="boxes">
+				<div class="dragItem1 drag-box" id="drag-box8">
+					<div class="inner-drag-box"></div>
+				</div>
+				<div id="line8" class="line"></div>
+				<div id="answer-line8" class="answer-line"></div>
+			</div>
+			<div id="box9" class="boxes">
+				<div class="dragItem1 drag-box" id="drag-box9">
+				<div class="inner-drag-box"></div>
+				</div>	
+				<div id="line9" class="line"></div>
+				<div id="answer-line9" class="answer-line"></div>
+			</div>
+			<div id="box10" class="boxes">
+				<div class="dragItem1 drag-box" id="drag-box10">
+				<div class="inner-drag-box"></div>
+				</div>
+				<div id="line10" class="line"></div>
+				<div id="answer-line10" class="answer-line"></div>
+			</div>
+			<div id="box11" class="boxes">
+				<div class="dragItem1 drag-box" id="drag-box11">
+				<div class="inner-drag-box"></div>
+				</div>
+				<div id="line11" class="line"></div>
+				<div id="answer-line11" class="answer-line"></div>
+			</div>
+			<div id="box12" class="boxes">
+				<div class="dragItem1 drag-box" id="drag-box12">
+				<div class="inner-drag-box"></div>
+				</div>
+				<div id="line12" class="line"></div>
+				<div id="answer-line12" class="answer-line"></div>
+			</div>			
+		</div>	
+
+		<!-- Drop Area -->
+		<div class="drop-area2">
+			<div id="drop-box7" class="drop-box dropItem">
+				<div class="drop-boxes" id=""></div>
+			</div>
+			<div id="drop-box8" class="drop-box dropItem">
+				<div class="drop-boxes" id=""></div>
+			</div>
+			<div id="drop-box9" class="drop-box dropItem">
+				<div class="drop-boxes" id=""></div>
+			</div>
+			<div id="drop-box10" class="drop-box dropItem">
+				<div class="drop-boxes" id=""></div>
+			</div>
+			<div id="drop-box11" class="drop-box dropItem">
+				<div class="drop-boxes" id=""></div>
+			</div>
+			<div id="drop-box12" class="drop-box dropItem">
+				<div class="drop-boxes" id=""></div>
+			</div>
+		</div>	
+		
+		
+		<div id="content-box3">			
+			<!-- Option 7 -->
+			<div id="answer7" class="answers-outer">
+				<span id="ans7">vk</span>
+			</div>
+			<!-- Option 8 -->
+			<div id="answer8" class="answers-outer">
+				<span id="ans8">_</span>
+			</div>			
+			<!-- Option 9 -->
+			<div id="answer9" class="answers-outer">
+				<span id="ans9">b</span>
+			</div>
+			<!-- Option 10 -->
+			<div id="answer10" class="answers-outer">
+				<span id="ans10">bZ</span>
+			</div>
+			<!-- Option 11 -->
+			<div id="answer11" class="answers-outer">
+				<span id="ans11">,s</span>
+			</div>
+			<!-- Option 12 -->
+			<div id="answer12" class="answers-outer">
+				<span id="ans12">,</span>
+			</div>
+		</div>		
+		
+ 	 	 <div id="bottomButtons1">
+			<div id="show1"><img id="show-img1" src="images/show-1.png" draggable="false"/></div>
+			<div id="refresh1"><img id="refresh-img1" src="images/refresh-1.png" draggable="false"/></div>
+		</div>  
+		
+	</div>	
+
+	</div>
+
+<!-- Result Page -->
+<div id="resultContainer">	 
+	<div class="result-title">
+		<div class="result-title-content">vad rkfydk</div>
+	</div>
+	<div id="result-content-box">
+		<div class="result-content">dqy<span id="totalCount">0</span></div></div>
+	<div id="result-content-box">
+		<div class="result-content">lgh<span id="totalCorrect">0</span></div>
+	</div>
+	<div id="result-content-box">
+		<div class="result-content">xyr<span id="totalIncorrect">0</span></div>
+	</div>
+	<div id="result-refresh">
+		<div class="result-refresh-content">iqu% djs</div>
+	</div>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.js"></script>
+<script src="js/jQueryRotateCompressed.2.2.js" type="text/javascript"></script>
+<script src="js/script.js"></script>
+<script>$('#widget').draggable();</script>
+</body>
+</html> 
+
